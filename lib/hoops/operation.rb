@@ -72,7 +72,7 @@ module Hoops
       forward(:failure!, other_operation, *ev_codes, as: as)
     end
 
-    def forward_failure(other_operation, *ev_codes, as: nil)
+    def forward_success(other_operation, *ev_codes, as: nil)
       forward(:success!, other_operation, *ev_codes, as: as)
     end
 
